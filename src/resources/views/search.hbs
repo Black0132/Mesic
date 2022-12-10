@@ -1,0 +1,21 @@
+<div class="mt-4">
+    {{!-- <form method="GET" action="/news"> --}}
+    <form method="POST" action="">
+    {{!-- action là submit ở trang khác không phải URL hiện tại và nhảy sang kèm theo query parameter --}}
+        <div class="form-group">
+            <label for="search-input">Từ khóa</label>
+            <input type="text" name="q" class="form-control" id="search-input" placeholder="Nhập từ khóa...">
+        </div>
+
+        <div class="form-group">
+            <label for="gender-input">Từ khóa</label>
+            <select name="gender" class="form-control" id="gender-input">
+                <option value="">-- Chọn giới tính --</option>
+                <option value="male">Nam</option>
+                <option value="female">Nữ</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
